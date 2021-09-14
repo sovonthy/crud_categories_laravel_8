@@ -40,7 +40,7 @@ class ProjectController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'introduction' => 'required',
+            'description' => 'required',
         ]);
 
         Project::create($request->all());
@@ -81,7 +81,7 @@ class ProjectController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'introduction' => 'required',
+            'description' => 'required',
         ]);
         $project->update($request->all());
 

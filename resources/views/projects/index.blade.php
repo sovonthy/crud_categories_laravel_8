@@ -31,13 +31,13 @@
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $project->name }}</td>
-                <td>{{ $project->introduction }}</td>
+                <td>{{ $project->description }}</td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 
-                        <a href="{{ route('projects.show', $project->id) }}" title="show">
+                        <!-- <a href="{{ route('projects.show', $project->id) }}" title="show">
                             <i class="fas fa-eye text-success  fa-lg"></i>
-                        </a>
+                        </a> -->
 
                         <a href="{{ route('projects.edit', $project->id) }}">
                             <i class="fas fa-edit  fa-lg"></i>
